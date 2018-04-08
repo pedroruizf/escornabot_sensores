@@ -16,12 +16,7 @@ void loop() {
   //mirobot.stop();
 
 
-
-  if (mirobot.pushButton() == right) {
-    funciona = !funciona;
-    delay (300);
-  }
-
+  compruebaBoton();
 
   if (funciona == true) {
     int cm = ping (triggerPin, echoPin);
@@ -31,13 +26,14 @@ void loop() {
 
 
     if (cm > 15) {
-      mirobot.driveD(-5, 10);
-
+      mirobot.driveD(-5, 15);
+      compruebaBoton();
     }
     else if (cm <= 15) {
 
-      mirobot.turnA (-45, 10);
-      mirobot.driveD (5, 10);
+      mirobot.turnA (-45, 15);
+      mirobot.driveD (5, 15);
+      compruebaBoton();
     }
 
 
@@ -65,3 +61,12 @@ int ping(int triggerPin, int echoPin) {
   return distanceCm;
   //delay (100);
 }
+
+void compruebaBoton () {
+  if (mirobot.pushButton() == right) {
+    funciona = !funciona;
+    delay (300);
+  }
+}
+
+
