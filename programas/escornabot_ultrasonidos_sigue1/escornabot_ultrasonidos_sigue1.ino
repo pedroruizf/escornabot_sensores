@@ -28,7 +28,7 @@ void loop() {
       mirobot.stop();
     }
     else {
-      mirobot.driveD(0, 0);
+      mirobot.driveD(-2, 15);
       mirobot.stop();
       mirobot.turnA (45, 15);
       mirobot.stop();

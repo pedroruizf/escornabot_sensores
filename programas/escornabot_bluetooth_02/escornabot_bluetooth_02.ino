@@ -1,7 +1,7 @@
 #include <escornabot.h>
 
 escornabot mirobot;
-boolean buzz=false;
+boolean buzz = false;
 
 void setup() {
   Serial.begin (9600);
@@ -10,18 +10,21 @@ void setup() {
 void loop() {
   //prueba de bluetooth de librería
 
-    switch (mirobot.blueT()) {//en función del caracter emitido por bluetooth hace varias acciones
+  switch (mirobot.blueT()) {//en función del caracter emitido por bluetooth hace varias acciones
     case 'A':
-      mirobot.drive (0.25, 12);
+      mirobot.driveD (10, 15);
       break;
     case 'R':
-      mirobot.drive (-0.25, 12);
+      mirobot.driveD (-10, 15);
       break;
     case 'D':
-      mirobot.turn (0.125, 12);
+      mirobot.turnA (45, 15);
       break;
     case 'I':
-      mirobot.turn (-0.125, 12);
+      mirobot.turnA (-45, 15);
+      break;
+    case 'C':
+      mirobot.turnA (360, 15);
       break;
     case '5':
       buzz = !buzz;
@@ -35,7 +38,7 @@ void loop() {
       //default:
       // statements
   }
-  
+
 }
 
 
