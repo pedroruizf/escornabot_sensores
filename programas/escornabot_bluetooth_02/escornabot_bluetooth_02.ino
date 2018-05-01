@@ -12,16 +12,16 @@ void loop() {
 
   switch (mirobot.blueT()) {//en función del caracter emitido por bluetooth hace varias acciones
     case 'A':
-      mirobot.driveD (10, 15);
-      break;
-    case 'R':
       mirobot.driveD (-10, 15);
       break;
+    case 'R':
+      mirobot.driveD (10, 15);
+      break;
     case 'D':
-      mirobot.turnA (45, 15);
+      mirobot.turnA (-45, 15);
       break;
     case 'I':
-      mirobot.turnA (-45, 15);
+      mirobot.turnA (45, 15);
       break;
     case 'C':
       mirobot.turnA (360, 15);
