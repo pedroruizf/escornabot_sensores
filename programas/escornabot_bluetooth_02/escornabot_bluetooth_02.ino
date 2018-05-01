@@ -18,10 +18,10 @@ void loop() {
       mirobot.driveD (10, 15);
       break;
     case 'D':
-      mirobot.turnA (-45, 15);
+      mirobot.turnA (45, 15);
       break;
     case 'I':
-      mirobot.turnA (45, 15);
+      mirobot.turnA (-45, 15);
       break;
     case 'C':
       mirobot.turnA (360, 15);
