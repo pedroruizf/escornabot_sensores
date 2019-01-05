@@ -1,7 +1,9 @@
 #include <escornabot.h>
 
+
 escornabot mirobot;
 boolean buzz = false;
+int n;
 
 void setup() {
   Serial.begin (9600);
@@ -35,8 +37,14 @@ void loop() {
         mirobot.buzzOFF();
       }
       break;
-      //default:
-      // statements
+    //default:
+    // statements
+    case 'E':
+      for (n = 1; n < 5; n++) {
+        mirobot.driveD (-10, 12);
+        mirobot.turnA (90, 12);
+      }
+
   }
 
 }
