@@ -3,6 +3,8 @@
 Repositorio que alberga toda la documentación para crear escornabots dotados con sensores: piezas en 3D, programas, proyectos completos con conexionado, cartelería, etc.
 
 ## Recursos
+Antes de nada construimos un [escornabot DIY (Do It Yourself)](https://pablorubma.cc/escornabot/version-diy/) y controlamos sus movimientos con la [librería para arduino de escornabot](https://github.com/escornabot/libreria-arduino).
+
 ### Piezas
 Se trata de las piezas a imprimir para incorporar los sensores.
 * [Soporte de batería para albergar sensores](/piezas/BatteryBracketSensor)
