@@ -24,13 +24,13 @@ void loop() {
 
 
     if (cm <= 15) {
-      mirobot.driveD(-5, 15);
+      mirobot.driveD(-5, 12);
       mirobot.stop();
     }
     else {
-      mirobot.driveD(-2, 15);
+      mirobot.driveD(-2, 12);
       mirobot.stop();
-      mirobot.turnA (45, 15);
+      mirobot.turnA (45, 12);
       mirobot.stop();
       
     }
@@ -67,5 +67,3 @@ void compruebaBoton () {
     delay (300);
   }
 }
-
-

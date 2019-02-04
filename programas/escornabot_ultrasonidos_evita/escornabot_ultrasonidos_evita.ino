@@ -24,13 +24,13 @@ void loop() {
 
 
     if (cm > 15) {
-      mirobot.driveD(-5, 15);
+      mirobot.driveD(-5, 12);
 
     }
     else if (cm <= 15) {
 
-      mirobot.driveD (5, 15);
-      mirobot.turnA (-45, 15);
+      mirobot.driveD (5, 12);
+      mirobot.turnA (-45, 12);
 
     }
 
@@ -64,6 +64,3 @@ int ping(int triggerPin, int echoPin) {
   distanceCm = duration * 10 / 292 / 2;  //convertimos a distancia, en cm
   return distanceCm;
 }
-
-
-
